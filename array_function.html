@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_function</title>
+</head>
+<body>
+    <script>
+        // let a  =['Ashish', 'Avi', 'Aviyansh', 'Virat', 100, 'Ashish']
+        // document.write(a);
+        // document.write("<br><br>");
+
+        // a.pop()
+        // document.write(a);
+        // document.write("<br>")
+
+        // a.push("Ankit")
+        // document.write(a +"<br>");
+
+        // a.shift()
+        // document.write(a +"<br><br>")
+
+        // a.unshift("Raj")
+        // document.write(a +"<br><br>")
+
+        // var b=a.slice(2,4)
+        // document.write(b +"<br><br>")
+
+
+        // a.splice(2,1,"Neha", "Sachin")
+        // document.write(a +"<br><br>")
+
+        // var b=a.indexOf("Virat", 1)
+        // document.write(b +"<br><br>")
+
+        // var c=a.lastIndexOf('Raj')
+        // document.write(c +"<br><br>")
+         
+        // let b=a.includes("Avi")
+        // document.write(b +"<br><br>")
+
+        // a.sort()
+        // document.write(a +"<br><br>")
+
+        // a.reverse()
+        // document.write(a +"<br><br>")
+
+        // var b= ["Rajat", "Ankit"]
+        // var c=a.concat(b)
+        // document.write(c +"<br><br>")
+
+
+        // var d=c.join(" - ")
+        // document.write(d +"<br><br>")
+
+
+
+        const names=['ram', 'shyam', 'seeta', 'geeta']
+
+        for (let i=0; i<names.length; i++){
+            const namearray= names[i].split("")
+            const firstlettercapital=namearray[0].toUpperCase()
+            namearray.shift()
+            namearray.unshift(firstlettercapital)
+            names[i]=namearray.join("")
+        }
+        document.write(names +'<br><br>');
+        // output - [Ram,Shyam,Seeta,Geeta]
+
+
+
+
+      const name=['Ram', 'Shyam', 'Seeta']
+      const reversearray = name.reverse()  
+       for (let i=0; i<name.length; i++){
+        name[i] = reversearray[i].split("").reverse()
+        name[i]= reversearray[i].join('')
+       }
+       document.write(name);
+       document.write('<br><br>')
+    //    output - [ateeS, mayhS, maR]
+
+
+
+
+
+    const str=['Ram', 'Shyam', 'Seeta']
+    for (let i =0; i<str.length; i++){
+        str[i] = str[i].split('').reverse()
+        str[i] = str[i].join('')
+    }
+    document.write(str)
+    // output - [maR, mayhS, ateeS]
+
+
+
+        
+
+    </script>
+</body>
+</html>
